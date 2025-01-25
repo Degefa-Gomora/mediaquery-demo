@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+/* .parentpuppy{
+    margin: auto;
+} */
+
+/* Header starts here */
+.blueBG{
+    background-color:#004b8d;
+    width: 100%;
+}
+
+/* for header text */
+.blueBG h1{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* for footer text */
+.blueBG h2{
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 65px;
+}
+
+/* For banner image */
+.banner,.banner img{
+    width: 100%;
+}
+.container img{
+    width: 100%;
+    height: auto;}
+.img1,.missing,.img2,.morePuppy,.bottomImg1,.bottomImg2{
+    margin: 20px auto;
+    width: 311px;
+    height: auto;
+}
+.missing{
+    display: none;
+    width: 33%;
+    height: 311px;
+    background-color:#ff6868;
+    font-family: "Roboto", serif;
+    font-weight: 900; 
+}
+.morePuppy{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.footerText{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+@media(min-width:768){
+    .missing{
+        display: block;
+        max-width: 650px;
+    }
+    .missingPuppy-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 650px;
+    }
+}
+
+
+
+/* media query */
+@media (min-width: 768px) { 
+  /* all puppies style */
+    .missingPuppy-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 650px;
+  } 
+  /* the first three puppies style */
+  .missingPuppy-wrapper > div {
+    width: 32%;
+    margin: 0;
+  } 
+  /* missing puppy style */
+  .missing {
+    background-color: #f04d65; 
+    display: block;
+    font-size: 3vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    height: auto;
+    width: 311px;
+  } 
+  /* the last two puppies style */
+  .img2 > div {
+    width: 48%;
+    margin: 0;
+  } 
+  /* more puppies text style */
+  .morePuppy{
+    margin-top: 70px;
+    margin-bottom: 68px;
+  } 
+  /* banner image style */
+  .banner img {
+    margin-bottom: 84px;
+  } 
+  /* footer style */
+  #footer { 
+    margin-top: 67px; 
+  } 
+} 
